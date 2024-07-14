@@ -124,3 +124,90 @@ Serial.println("Hello, world!");
 -   **Parameters:**
     -   `data`: The data to print (e.g., a string, a variable).
 
+<!-- Servo.h -->
+
+## Servo.h library functions
+
+### 1.  `Servo()`
+
+Constructor to create a Servo object.
+
+```cpp
+Servo myservo;
+```
+
+-   **Purpose:** Creates a Servo object.
+-   **Parameters:** None.
+
+### 2.  `attach(pin)`
+
+Attaches the Servo variable to a pin.
+
+```cpp
+myservo.attach(9);
+``` 
+
+-   **Purpose:** Attaches the Servo to a specific pin.
+-   **Parameters:**
+    -   `pin`: The pin number to which the servo is attached.
+
+### 3.  `write(angle)`
+
+Writes a value to the servo, controlling its angle.
+
+```cpp
+myservo.write(90);
+``` 
+
+-   **Purpose:** Sets the servo angle.
+-   **Parameters:**
+    -   `angle`: The angle to set the servo (0 to 180 degrees).
+
+### 4.  `writeMicroseconds(us)`
+
+Writes a value in microseconds to the servo.
+
+```cpp
+myservo.writeMicroseconds(1500);
+``` 
+
+-   **Purpose:** Sets the servo pulse width in microseconds.
+-   **Parameters:**
+    -   `us`: Pulse width in microseconds.
+
+### 5.  `read()`
+
+Reads the current angle of the servo.
+
+```cpp
+int angle = myservo.read();
+``` 
+
+-   **Purpose:** Returns the current angle of the servo.
+-   **Parameters:** None.
+-   **Returns:** The angle of the servo (0 to 180 degrees).
+
+### 6.  `attached()`
+
+Checks if the servo is attached to a pin.
+
+```cpp
+if (myservo.attached()) {
+    // Servo is attached
+}
+``` 
+
+-   **Purpose:** Checks if the servo is attached to a pin.
+-   **Parameters:** None.
+-   **Returns:** `true` if the servo is attached, `false` otherwise.
+
+### 7.  `detach()`
+
+Detaches the servo from its pin.
+
+```cpp
+myservo.detach();
+``` 
+
+-   **Purpose:** Detaches the servo from the pin.
+-   **Parameters:** None.
