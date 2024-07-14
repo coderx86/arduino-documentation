@@ -1,6 +1,6 @@
 # ARDUINO
 
-## Common arduini functions
+## Common arduino functions
 
 ### 1.  `pinMode(pin, mode)`
 
